@@ -27,15 +27,38 @@ cd the-meh-thematical-calculator-ZoltanHari
 
 ## Usage Example
 
-
+![](./Calculator.png)
 
 ## Path Modification
 
+To edit or add new dialogue or operations, open the **`mehthematic_calculator.py`** file in a text editor like VS Code and use the following format
+```python
+def operation():
+    result = (num_1 (operation) num_2)
+    type_out(f"The answer is like {result}, I guess. Try not to get too excited.")
 
+while True:
+    operation = get_operation("Tell me which operation you so desperately want to do? Not like it matters to me (+, -, *, /, ^, (new operation))")
 
+    match operation:
+        case "operation":
+            operation()
+```
 ## Path Modification Example
 
+```python
+def square_root():
+    result = (num_1 + num_2 ** 0.5)
+    type_out(f"The answer is like {result}, I guess. Try not to get too excited.")
 
+While True:
+    operation = get_operation("Tell me which operation you so desperately want to do? Not like it matters to me (+, -, *, /, ^, ^0.5(Square Root))")
 
+    match operation:
+        case "^0.5":
+            square_root()
+```
 ## Decision Tree
+
+https://docs.google.com/document/d/1uJ2AdxNT7z2FIfS5rxXMgYbf-H68o3JvOQp-OGj3IEw/edit?tab=t.0
 
