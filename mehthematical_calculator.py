@@ -28,29 +28,26 @@ def get_operation(prompt):
 
 def add():
     result = (num_1 + num_2)
-    type_out(f"The answer is like {result}, I guess. Try not to get too excited.")
 
 def subtract():
     result = (num_1 - num_2)
 
-    type_out(f"The answer is {result}. Not that it really matters.")
 def multiply():
     result = (num_1 * num_2)
-    type_out(f"The answer is {result}. Happy now?")
 
 def divide():
     if num_2 == 0 and num_1 == 0:
         type_out("You can't divide zero by zero, genius")
+    elif num_2 == 0:
+        type_out("Great job, Einstein. You can't divide by zero. It's undefined.")
     else:
         result = (num_1 / num_2)
-        type_out(f"The answer is {result}. Big deal")
 
 def power():
-    if num_1 == 0 and num_2 == 0:
+    if num_2 == 0:
         type_out("That's undefined, try to do a calculation that's actually possible next time. If you can get that through your thick skull")
     else:
         result = (num_1 ** num_2)
-        type_out(f"The answer is {result}. Not that I care.")
 
 type_out("Ugh... welcome to the most boring calculator ever. Let's get this over with")
 while True:
@@ -60,14 +57,19 @@ while True:
     match operation:
         case "+":
             add()
+            type_out(f"The answer is like {result}, I guess. Try not to get too excited.")
         case "-":
             subtract()
+            type_out(f"The answer is {result}. Not that it really matters.")
         case "*":
             multiply()
+            result = (num_1 * num_2)
         case "/":
             divide()
+            type_out(f"The answer is {result}. Big deal")
         case "^":
             power()
+            type_out(f"The answer is {result}. Not that I care.")
         case _:
             print("Ugh, I can't do that. Try again, I guess. This isn't rocket science. Just pick a real operation.")
             
