@@ -27,7 +27,15 @@ cd the-meh-thematical-calculator-ZoltanHari
 
 ## Usage Example
 
-![](./Calculator.png)
+![](images/Calculator.png)
+
+## Testing
+
+To run the tests for the calculator, you need to enter **`pytest path/to/calculator/the-meh-thematical-calculator-ZoltanHari`** in the terminal, wait for the tests to finish, and see the result
+
+## Testing Example
+
+![Image showing the tests being run in terminal](images/meh_tests.png)
 
 ## Path Modification
 
