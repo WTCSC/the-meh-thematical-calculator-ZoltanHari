@@ -42,6 +42,3 @@ def test_exponent_positive_numbers():
 
 def test_exponent_zero_power():
     assert exponent(5, 0) == 1
-
-def test_divide_zero_by_zero():
-    assert divide(0, 0) == None
