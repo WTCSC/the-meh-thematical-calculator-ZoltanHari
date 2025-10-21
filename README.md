@@ -6,6 +6,8 @@ The Mehthematical Calculator is a calculator that allows you to add, subtract, m
 ## Requirements
 
 Python 3
+Git
+Pytest
 
 ## Installation
 
